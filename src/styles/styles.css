@@ -1,0 +1,53 @@
+:root {
+  --width: 100vw;
+  --height: 100vh;
+  --font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body,
+html {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  user-select: none;
+  width: 100vw;
+}
+
+.cover-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("../img/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 100%;
+}
+
+.cover-text {
+  color: white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.cover-text h1 {
+  font-size: 10vh;
+}
+
+.cover-text h2 {
+  font-size: 5vh;
+}
